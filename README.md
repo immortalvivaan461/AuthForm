@@ -24,6 +24,8 @@ https://formvalidationtask3.netlify.app/
 - **jQuery** – DOM manipulation & event handling
 
 ---
+## 📂 Folder Structure
+
 Form-Validation/
 │
 ├── index.html # Main HTML page
@@ -56,6 +58,4 @@ Form-Validation/
 git clone https://github.com/your-username/form-validation-page.git
 cd form-validation-page
 open index.html
-
-## 📂 Folder Structure
 
