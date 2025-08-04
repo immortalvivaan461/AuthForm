@@ -1,0 +1,76 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+    background-image: url(https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?_gl=1*1mxnjiu*_ga*MTk1NzIyODQwNi4xNzUxMzUwOTQ1*_ga_8JE65Q40S6*czE3NTE4ODMzNDIkbzUkZzAkdDE3NTE4ODMzNDIkajYwJGwwJGgw);
+
+}
+
+#img {
+    background-image: url(https://colorlib.com/etc/regform/colorlib-regform-7/images/signup-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid black; */
+
+}
+
+#data {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.container {
+    background-color: white;
+    width: 70%;
+    height: 85vh;
+    border-radius: 20px;
+    display: flex;
+}
+
+.heading {
+    align-self: center;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size:clamp(.75rem, 2.5vw, 1.25rem);
+    font-family: cursive;
+    gap: 5px;
+    margin-left: 20px;
+}
+input{
+    height: 1.75rem;
+    width: 75%;
+    border-radius:  5px;
+}
+#togglePassword{
+    width: 40px;
+    height: 17px;
+}
+#submitbtn{
+    width: 25%;
+}
+#msg{
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

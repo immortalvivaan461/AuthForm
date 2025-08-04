@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Validation page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="img"></div>
+        <div id="data">
+            <h1 class="heading">Log-In/Sign-Up</h1>
+            <form>
+                <label for="Fname">First Name:</label>
+                <input type="text" id="Fname" placeholder="Enter First Name" required>
+
+                <label for="Lname">Last Name:</label>
+                <input type="text" id="Lname" placeholder="Enter Last Name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="abc123@gmail.com" required>
+
+                <label for="contact">Contact:</label>
+                <input type="text" id="contact" placeholder="+91 0011223344" maxlength="10" pattern="\d{10}" inputmode="numeric" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Abc123@" minlength="8" maxlength="15"
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,15}$"
+                    title="Password must be 8-15 characters long and include uppercase, lowercase, number, and special character"
+                    required>
+                <button id="togglePassword">Show</button>
+
+                <label for="re-password">Confirm Password:</label>
+                <input type="password" id="re-password" placeholder="Abc123@" required>
+                <p id="msg"></p>
+                <input type="submit" value="Submit" id="submitbtn">
+            </form>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
